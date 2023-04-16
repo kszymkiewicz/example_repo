@@ -24,7 +24,8 @@ print('Pole rombu wynosi '+ str(pole_romb) + ', a obowod wynosi ' + str(obwod_ro
 #kolo
 
 r = 8
-pole_kolo = 3,14 * r**2
-obwod_kolo = 2 * 3,14 * r
+pole_kolo = 3.14 * r**2
+obwod_kolo = 2 * 3.14 * r
 
 print('Pole kola wynosi '+ str(pole_kolo) + ', a obowd wynosi ' + str(obwod_kolo))
+
