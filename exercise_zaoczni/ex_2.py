@@ -42,4 +42,12 @@ obwod_trapez = a_trapez + b_trapez + c_trapez + d_trapez
 
 print('Pole trapezu wynosi ' + str(pole_trapez) + ', a obwod wynosi ' + str(obwod_trapez))
 
+#prostokat
 
+a_prostokat = 3
+b_prostokat = 4
+
+pole_prostokat = a_prostokat * b_prostokat
+obwod_prostokat = 2* a_prostokat + 2*b_prostokat
+
+print('Pole prostokatu wynosi ' + str(pole_prostokat) + ', a obwod wynosi ' + str(obwod_prostokat))
