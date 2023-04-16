@@ -29,3 +29,17 @@ obwod_kolo = 2 * 3.14 * r
 
 print('Pole kola wynosi '+ str(pole_kolo) + ', a obowd wynosi ' + str(obwod_kolo))
 
+#trapez
+
+a_trapez = 5
+b_trapez = 8
+c_trapez = 3
+d_trapez = 3
+h_trapez = 4
+
+pole_trapez = 1/2 * (a_trapez + b_trapez) * h_trapez
+obwod_trapez = a_trapez + b_trapez + c_trapez + d_trapez
+
+print('Pole trapezu wynosi ' + str(pole_trapez) + ', a obwod wynosi ' + str(obwod_trapez))
+
+
