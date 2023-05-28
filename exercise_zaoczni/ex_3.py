@@ -115,3 +115,51 @@ for student in studenci_split:
         liczba_n = liczba_n + 1
 
 print("Liczba studentow na N wynosi: {}".format(liczba_n))
+
+
+# zadanie 1.10
+
+# zmienne poniezej preprezentuja ulozenie punktow na wykresie,
+# do zadania dolaczono takze rysunek pomocniczy
+wykres_1 = [[2, 4], [4, 4], [6, 4]]
+wykres_2 = [[2, 3], [4, 4], [6, 5]]
+wykres_3 = [[2, 3], [4, 3], [5, 4]]
+
+# zbadaj kazdy wykres, czy dla wyznaczonych punktow istnieje funkcja
+# liniowa laczaca punkty
+# jesli sie nie da, to zwroc False
+# jesli sie da, zwroc True
+
+wykres_1_funkcja_liniowa = False
+wykres_2_funkcja_liniowa = False
+wykres_3_funkcja_liniowa = False
+
+if wykres_1[0][0]*(wykres_1[1][1]-wykres_1[2][1]) + wykres_1[1][0]*(wykres_1[2][1]-wykres_1[0][1]) + wykres_1[2][0]*(wykres_1[0][1]-wykres_1[1][1]) == 0:
+    wykres_1_funkcja_liniowa = True
+
+if wykres_2[0][0]*(wykres_2[1][1]-wykres_2[2][1]) + wykres_2[1][0]*(wykres_2[2][1]-wykres_2[0][1]) + wykres_2[2][0]*(wykres_2[0][1]-wykres_2[1][1]) == 0:
+    wykres_2_funkcja_liniowa = True
+
+if wykres_3[0][0]*(wykres_3[1][1]-wykres_3[2][1]) + wykres_3[1][0]*(wykres_3[2][1]-wykres_3[0][1]) + wykres_3[2][0]*(wykres_3[0][1]-wykres_3[1][1]) == 0:
+    wykres_3_funkcja_liniowa = True
+
+
+if wykres_1_funkcja_liniowa:
+    print("Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_1 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_2_funkcja_liniowa:
+    print("Dla punktow w wykres_2 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_2 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_3_funkcja_liniowa:
+    print("Dla punktow w wykres_3 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_3 nie mozna wyznaczyc funkcji liniowej.")
+
+# oczekiwany rezultat:
+# Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.
+# Dla punktow w wykres_2 mozna wyznaczyc funkcje liniowa.
+# Dla punktow w wykres_3 nie mozna wyznaczyc funkcji liniowej.
