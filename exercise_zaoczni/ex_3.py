@@ -24,3 +24,17 @@ studenci = ["Ania", "Kuba", "Piotr", "Jan"]
 liczba_studentow = len(studenci)
 print(f"Liczba studentow wynosi: {liczba_studentow}")
 
+
+# zadanie 1.4
+
+studenci = ["Ania", "Kasia", "Piotr", "Tomek"]
+
+# za pomoca petli i print przywitaj sie z kazdym studentem
+# z tabeli studenci osobno
+# oczekiwany rezultat:
+# Hello Ania
+# Hello Kasia
+# Hello Piotr
+# Hello Tomek
+for i in studenci:
+    print("Hello {}".format(i))
